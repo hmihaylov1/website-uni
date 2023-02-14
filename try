@@ -1,0 +1,15 @@
+<?php
+
+
+$array = [
+    'Time for a sandwitch',
+    'PHP is great'
+
+];
+
+$unique = array_unique($array);
+
+foreach ($unique as $u) {
+    echo $u . '<br>';
+};
+
