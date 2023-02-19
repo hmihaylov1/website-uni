@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title>My Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="input-example.js"></script>
+
   </head>
+
   <body>
+
     <header>
       <h1>My Website</h1>
       <nav>
@@ -16,22 +21,37 @@
         </ul>
       </nav>
     </header>
+
     <main>
+
       <section>
         <h2>Welcome to My Website</h2>
         <p>Here's some information about what my website is all about.</p>
       </section>
+
       <section>
         <h2>About Me</h2>
         <p>Here's some information about me and my background.</p>
       </section>
+
       <section>
         <h2>Contact Me</h2>
         <p>Here's how you can get in touch with me.</p>
       </section>
+
     </main>
+
+    <section>
+      <h1>Input Example</h1>
+      <label for="inputField">Enter your name:</label>
+      <input type="text" id="inputField">
+      <button onclick="displayInput()">Submit</button>
+      <p id="output"></p>
+    </section>
+
     <footer>
       <p>&copy; 2023 My Website. All rights reserved.</p>
     </footer>
+    
   </body>
 </html>
