@@ -129,5 +129,3 @@ function submitData() {
 	// Close the modal dialog
 	closePopup();
 }
-
-
