@@ -1,4 +1,12 @@
+@font-face {
+  font-family: 'Irish Grover';
+  src: url('C:/Users/admin/Desktop/web/Frontend/IrishGrover-Regular') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Global styles */
+
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -65,6 +73,19 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+  }
+  .head-button {
+    border-radius: 40px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Irish Grover', sans-serif;
   }
   
   /* Footer styles */
