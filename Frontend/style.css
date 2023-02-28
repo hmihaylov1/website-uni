@@ -5,6 +5,15 @@
   font-style: normal;
 }
 
+/*header section */
+.header-section {
+  background-color: #A6D9F5;
+  padding: 1px;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Irish Grover';
+  font-weight: bold;
+}
 /* Global styles */
 
 body {
@@ -17,7 +26,7 @@ body {
   
   /* Header styles */
   header {
-    background-color: #333;
+    background-color: #6CBAF2;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -87,10 +96,54 @@ body {
     cursor: pointer;
     font-family: 'Irish Grover', sans-serif;
   }
+  .head-button-diff {
+    border-radius: 40px;
+    padding: 10px 20px;
+    background-color: #FA5959;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Irish Grover', sans-serif;
+  }
+
+  /* Search Bar Styles */
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .search-container form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    font-size: 25px;
+    background: #6CBAF2;
+  }
+  
+  .search-container button {
+    padding: 10px;
+    background: #333;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background: #666;
+  }
   
   /* Footer styles */
   footer {
-    background-color: #333;
+    background-color: #7BD7D7;
     color: #fff;
     padding: 10px 20px;
     text-align: center;

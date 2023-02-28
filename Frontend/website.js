@@ -1,9 +1,4 @@
-function displayInput() {
-    var input = document.getElementById("inputField").value;
-    document.getElementById("output").innerHTML = "Hello, " + input + "!";
-}
-  
-var modal = null;
+  var modal = null;
 
 function openPopup() {
 	// If the modal dialog is already open, do nothing
@@ -129,3 +124,15 @@ function submitData() {
 	// Close the modal dialog
 	closePopup();
 }
+
+// Search Bar 
+
+const form = document.querySelector('form');
+const input = document.querySelector('input[type="text"]');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  console.log(input.value);
+  // Replace console.log with your search function
+}
+);
