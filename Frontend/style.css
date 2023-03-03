@@ -14,6 +14,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
+  /* background: white; */
   background: linear-gradient(to bottom right, #FFFFFF, #BBF0F8);
 }
   
@@ -262,8 +263,8 @@ h4 {
 
 /* Footer styles */
 footer {
-  background-color: #7BD7D7;
-  color: #fff;
+  background-color:#A6D9F5;
+  color: black;
   padding: 10px 20px;
   text-align: center;
 }
