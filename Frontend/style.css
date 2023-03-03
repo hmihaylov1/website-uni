@@ -63,6 +63,11 @@ section h2 {
   margin-bottom: 10px;
 }
 
+section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
 section p {
   margin: 0;
 }
@@ -158,6 +163,67 @@ button {
 
 .search-container button:hover {
   background: #666;
+}
+/* Button Section */
+.menu-button {
+  border-radius: 40px;
+  padding: 10px 20px;
+  background-color: #EB0E0E;
+  color: white;
+  position: absolute;
+  right: 350px;
+  top: 740px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  font-family: 'Fredoka One', sans-serif;
+}
+.text-2 {
+  border-radius: 40px;
+  padding: 10px 20px;
+  background-color: none;
+  color: black;
+  position: absolute;
+  right: 50px;
+  top: 850px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  font-family: 'Fredoka One', sans-serif;
+}
+.menu-button-1 {
+  border-radius: 40px;
+  padding: 10px 20px;
+  background-color: #EB0E0E;
+  color: white;
+  position: absolute;
+  left: 250px;
+  top: 880px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  font-family: 'Fredoka One', sans-serif;
+}
+.menu-button-2 {
+  border-radius: 40px;
+  padding: 10px 20px;
+  background-color: #EB0E0E;
+  color: white;
+  position: absolute;
+  right: 350px;
+  top: 1120px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  font-family: 'Fredoka One', sans-serif;
 }
 
 /* Footer styles */
