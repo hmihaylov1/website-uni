@@ -38,7 +38,7 @@ function openPopup() {
   form.style.textAlign = "center";
 
 	var temperatureLabel = document.createElement("label");
-	temperatureLabel.textContent = "Enter temperature:";
+	temperatureLabel.textContent = "Enter CO2 level:";
   temperatureLabel.style.fontSize = "20px";
   temperatureLabel.style.fontWeight = "bold";
   temperatureLabel.style.color = "#2c3e50";
