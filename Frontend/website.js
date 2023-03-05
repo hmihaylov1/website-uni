@@ -130,13 +130,6 @@ function submitData() {
 const form = document.querySelector('form');
 const input = document.querySelector('input[type="text"]');
 
-// form.addEventListener('submit', (e) => {
- // e.preventDefault();
- // console.log(input.value);
-  // Replace console.log with your search function
-// }
-// );
-
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -170,3 +163,32 @@ getRandomFact();
 window.addEventListener("beforeunload", getRandomFact);
 
 console.log(getRandomFact);
+
+// get the form element and the modal element
+var form1 = document.getElementById("modal-form");
+var modal = document.getElementById("modal");
+
+// add an event listener to the form's submit button
+form1.addEventListener("submit", function(event) {
+  event.preventDefault(); // prevent the form from submitting normally
+  
+  // get the user input from the form
+  var co2_level = document.getElementById("co2_level").value;
+  var room_name = document.getElementById("room_name").value;
+  
+  // create a new XMLHttpRequest object
+  var xhttp = new XMLHttpRequest();
+  
+  // set the callback function for when the request is complete
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      console.log(this.responseText);
+      modal.style.display = "none"; // hide the modal dialog after the data has been submitted
+    }
+  };
+  
+  // send the form data to the PHP file using POST method
+  xhttp.open("POST", "connection.php", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("co2_level=" + co2_level + "&room_name=" + room_name);
+});
