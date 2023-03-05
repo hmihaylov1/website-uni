@@ -141,7 +141,21 @@ button {
   margin: 4px 2px;
   font-family: 'Fredoka One', sans-serif;
 }
-
+.snimchica_about {
+  border-radius: 0px;
+  padding: 40px 150px;
+  background-color: #fff;
+  color: white;
+  position: absolute;
+  right: 160px;
+  bottom: 120px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  font-family: 'Fredoka One', sans-serif;
+}
 /* Search Bar Styles */
 .search-container {
   display: flex;
