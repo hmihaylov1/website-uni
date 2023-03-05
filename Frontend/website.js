@@ -1,4 +1,4 @@
-  var modal = null;
+var modal = null;
 
 function openPopup() {
 	// If the modal dialog is already open, do nothing
