@@ -1,0 +1,29 @@
+<?php
+// connect to the database
+$servername = "localhost";
+$username = "root";
+$password = "Edlanta39!";
+$dbname = "website";
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+// check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+$location = $_POST['location'];
+$co2_level = $_POST['co2_level'];
+
+// Prepare and bind the SQL statement
+$stmt = $conn->prepare("INSERT INTO co2_level (co2_level, location) VALUES (?, ?)");
+$stmt->bind_param("ds", $co2_level, $location);
+
+// Set parameters and execute the statement
+$stmt->execute();
+
+echo "Measurement submitted successfully.";
+
+$stmt->close();
+$conn->close();
+?>

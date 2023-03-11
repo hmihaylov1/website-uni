@@ -5,7 +5,6 @@ function openPopup() {
 	if (modal && modal.style.display === "block") {
 		return;
 	}
-
 	// Create a new modal dialog
 	modal = document.createElement("div");
 	modal.style.display = "block";
@@ -33,7 +32,7 @@ function openPopup() {
   popup.style.boxShadow = "0 0 10px #2c3e50";
 
 	// Add the form fields and submit button
-	var form = document.createElement("form");
+  var form = document.createElement("form");
   form.style.marginTop = "30px";
   form.style.textAlign = "center";
 
