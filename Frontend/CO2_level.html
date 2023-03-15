@@ -2,17 +2,20 @@
 <html>
 <head>
 	<title>CO2 Form</title>
+	<link rel="stylesheet" type="text/css" href="pages.css">
 </head>
 <body>
-  <h2>CO2 Level</h2>
-  <form method="post" action="CO2_level.php">
-      <label for="co2_level">CO2 Level:</label>
-      <input type="number" name="co2_level" id="co2_level" step="any" required><br><br>
+	<div class="modal">
+		<form method="post" action="CO2_level.php">
+			<h2>CO2 Level</h2>
+			<label for="co2_level">CO2 Level:</label>
+			<input type="number" name="co2_level" id="co2_level" step="any" required><br><br>
 
-      <label for="location">Location:</label>
-      <input type="text" name="location" id="location" required><br><br>
+			<label for="location">Location:</label>
+			<input type="text" name="location" id="location" required><br><br>
 
-      <input type="submit" value="Submit">
-    </form>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
 </body>
-</html> 
+</html>
