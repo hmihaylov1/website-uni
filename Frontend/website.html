@@ -5,9 +5,8 @@
     <title>My Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="website.js"></script>
-    <script src="../Measurements/shareKnowledgePopUp.js"></script>
     <link rel="stylesheet" href="../Measurements/shareKnowledgePopUp.css">
+    <link rel="stylesheet" href="../DidYouKnow/didyouknow.css">
     <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
   </head>
 
@@ -143,8 +142,11 @@
       <br>
       <hr>
       <h4>Did You Know?</h4>
-      <br>
-      <p class="p-tag-centered">Some Fun Facts. I am still working on randomizing.</p>
+      <!-- <br> -->
+      <div id="fun-fact-section"></div>
+      <div class="did-you-know-refresh-container">
+        <button id="refresh-button">Refresh</button>
+      </div>
       <br>
       <hr>
 
@@ -166,6 +168,8 @@
       <img src="../Images/Facebook-logo.png" alt="Twitter-logo" width="110px" height="70px">
       <p>&copy; 2023 My Website. All rights reserved.</p>
     </footer>
-    
+    <script src="website.js"></script>
+    <script src="../Measurements/shareKnowledgePopUp.js"></script>
+    <script src="../DidYouKnow/didyouknow.js"></script>
   </body>
 </html>

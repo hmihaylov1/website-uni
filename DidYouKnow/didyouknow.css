@@ -1,0 +1,30 @@
+#fun-fact-section {
+  font-size: 1.5em;
+  margin: 1rem;
+  text-align: center;
+}
+  
+#refresh-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  
+#refresh-button:hover {
+  background-color: #3e8e41;
+}
+
+.did-you-know-refresh-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
