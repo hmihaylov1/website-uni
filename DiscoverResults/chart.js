@@ -3,11 +3,11 @@ var ctx = document.getElementById("myChart").getContext("2d");
 
 // Define the data for your line graph
 var chartData = {
-  labels: ["January", "February", "March", "April", "May", "June", "July"],
+  labels: [],
   datasets: [
     {
-      label: "My First Dataset",
-      data: [65, 59, 80, 81, 56, 55, 40],
+      label: "Temperature",
+      data: [],
       fill: false,
       borderColor: "rgb(75, 192, 192)",
       tension: 0.1,
@@ -15,8 +15,20 @@ var chartData = {
   ],
 };
 
-// Create a new line chart and display it on the canvas element
-var myChart = new Chart(ctx, {
-  type: "line",
-  data: chartData,
-});
+// Fetch the data from the PHP script
+fetch('temperature.php')
+  .then(response => response.json())
+  .then(data => {
+    // Loop through the data and add it to the chart data
+    data.forEach(row => {
+      chartData.labels.push(row.measurement_time);
+      chartData.datasets[0].data.push(row.temperature);
+    });
+
+    // Create a new line chart and display it on the canvas element
+    var myChart = new Chart(ctx, {
+      type: "line",
+      data: chartData,
+    });
+  })
+  .catch(error => console.error(error));
