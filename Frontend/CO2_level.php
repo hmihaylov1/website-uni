@@ -22,8 +22,10 @@ $stmt->bind_param("ds", $co2_level, $location);
 // Set parameters and execute the statement
 $stmt->execute();
 
-echo "Measurement submitted successfully.";
-
 $stmt->close();
 $conn->close();
+
+// redirect to success page
+header("Location: success.html");
+exit();
 ?>

@@ -27,4 +27,8 @@ if (mysqli_query($conn, $sql)) {
 
 // close the database connection
 mysqli_close($conn);
+
+// redirect to success page
+header("Location: success.html");
+exit();
 ?>
