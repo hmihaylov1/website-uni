@@ -26,4 +26,8 @@ echo "Humidity level submitted successfully.";
 
 $stmt->close();
 $conn->close();
+
+// redirect to success page
+header("Location: success.html");
+exit();
 ?>
