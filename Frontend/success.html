@@ -67,12 +67,16 @@
 		<h2>Success!</h2>
 		<p>The measurement has been done successfully.</p>
 		<button id="back-btn">Back to Main Page</button>
+		<br>
+		<a href="temperature.html">
+			<button id="another-btn">Take Another Measurement</button>
+		</a>
 		<p>You will be redirected in <span id="countdown">10</span> seconds.</p>
 	</div>
     
     <script>
         // redirect to website.html after 10 seconds
-        var count = 10;
+        var count = 30;
         var countdown = setInterval(function() {
             count--;
             document.getElementById("countdown").innerHTML = count;
