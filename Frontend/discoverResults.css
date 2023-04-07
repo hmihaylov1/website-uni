@@ -1,0 +1,156 @@
+/*header section */
+.header-section {
+  background-color: #A6D9F5;
+  padding: 1px;
+  padding-left: 1rem;
+  text-align: left;
+  font-size: 15px;
+  font-family: 'Fredoka One';
+
+}
+/* Global styles */
+
+body {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  /* background: white; */
+  background: linear-gradient(to bottom right, #FFFFFF, #BBF0F8);
+  scroll-behavior: smooth;
+}
+  
+/* Header styles */
+header {
+  background-color: #30A1F4;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+section p {
+  margin: 0;
+}
+
+button {
+  margin: 20px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.head-button {
+  border-radius: 40px;
+  padding: 10px 20px;
+  background-color: #FADE4D;
+  color: #434D66;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+.head-button-diff {
+  border-radius: 40px;
+  padding: 10px 20px;
+  background-color: #FA5959;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Fredoka One', sans-serif;
+}
+/* Search Bar Styles */
+.search-container {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+.search-container form {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  padding: 8px;
+  border: none;
+  font-size: 20px;
+  background: #6CBAF2;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+/* Center the button */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* Style the button */
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #EB0E0E;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+/* Change the button color on hover */
+.button:hover {
+  background-color: #3e8e41;
+}

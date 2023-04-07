@@ -2,38 +2,40 @@
 <html>
   <head>
     <title>My Web Page</title>
-    <style>
-      /* Center the button */
-      .center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-
-      /* Style the button */
-      .button {
-        display: inline-block;
-        padding: 15px 30px;
-        font-size: 24px;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: none;
-        color: #ffffff;
-        background-color: #4caf50;
-        border-radius: 50px;
-        transition: background-color 0.3s ease;
-      }
-
-      /* Change the button color on hover */
-      .button:hover {
-        background-color: #3e8e41;
-      }
-    </style>
+    <link href='discoverResults.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
   </head>
   <body>
+    <header>
+      <a href="website.html"><h1>My Website</h1></a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search...">
+        </form>
+      </div>
+  
+      <nav class="nav-2">
+        <ul>
+          <li><button class="head-button" id="share-knowledge2">Share Knowledge</button></li>
+          <li><a href="discoverResults.html" class="head-button">Discover Results</a></li>
+          <li><a href="exploreMaterials.html" class="head-button">Explore Materials</a></li>
+          <li><a href="#" class="head-button">Unlock Adventures</a></li>
+          <li><a href="#" class="head-button-diff">My World</a></li>
+        </ul>
+      </nav>
+  
+  
+  
+    </header>
     <div class="center">
       <a href="../DiscoverResults/results.html" class="button">Temperature</a>
+      <a href="../DiscoverResults/results_CO2.html" class="button">CO2 Level</a>
+      <a href="../DiscoverResults/results.html" class="button">Humidity</a>
+      <a href="../DiscoverResults/results.html" class="button">Light</a>
     </div>
+
+    <script src="../Measurements/shareKnowledgePopUp.js"></script>
+    <script src="website.js"></script>
+    <script src="navbar-dropdown.js"></script>
   </body>
 </html>

@@ -13,23 +13,22 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// Retrieve data from the "temperature" table
-$sql = "SELECT temperature, measurement_time FROM temperature";
+// Retrieve data from the "CO2" table
+$sql = "SELECT location, co2_level, measurement_time FROM co2_level";
 $result = mysqli_query($conn, $sql);
 
 $data = array();
 
-if (mysqli_num_rows($result) > 0) {
-    // Convert the retrieved data to an array of objects
-    while ($row = mysqli_fetch_assoc($result)) {
-        $data[] = $row;
+// Loop through each row in the result set and add it to the data array
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+      $data[] = $row;
     }
 }
-
+  
 // Close the database connection
-mysqli_close($conn);
+$conn->close();
 
-// Return the data as JSON
+// Return the data as a JSON object
 header('Content-Type: application/json');
 echo json_encode($data);
-?>
