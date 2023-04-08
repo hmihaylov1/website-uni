@@ -1,0 +1,88 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Workshop styles */
+.workshop {
+  display: none;
+}
+
+.workshop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.workshop-header h2 {
+  margin: 0;
+}
+
+.workshop-button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #ccc;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Lesson styles */
+.lesson-list {
+  display: none;
+}
+
+.lesson {
+  display: none;
+  margin-left: 50px;
+}
+
+.lesson-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.lesson-header h3 {
+  margin: 0;
+}
+
+.lesson-button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #ccc;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Worksheet styles */
+.worksheet-list {
+  display: none;
+}
+
+.worksheet {
+  display: none;
+  margin-left: 50px;
+}
+
+.worksheet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.worksheet-header h4 {
+  margin: 0;
+}
+  
