@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #1d93ff, #00abff, #00c0ff, #00d2f8, #12e2eb);
+  font-family: 'Fredoka One', sans-serif;
+  color: #4d4d4d;
+}
+
+nav {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-left: 1rem;
+}
+
+nav > h1 {
+  color: #576571;
+}
+
+.back-arrow {
+  margin-top: 8px;
+  margin-right: 0.8rem;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+ul.tree {
+  width: 100%;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
+li:before, li:after {
+  content: '';
+  position: absolute;
+  left: -22px;
+  background-color: #5d5d5d;
+}
+
+li:before {
+  height: 2px;
+  width: 1rem;
+  top: 30px;
+}
+
+li:after {
+  height: 100%;
+  width: 2px;
+  top: -16px;
+}
+
+li.parent:after {
+  height: 100%;
+  top: 15px;
+}
+
+li.parent:nth-last-child:after {
+  content: none;
+}
+
+details {
+  margin: 0 auto;
+}
+
+summary {
+  font-size: 1.3rem;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  background-color: aquamarine;
+  width: 160px;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  box-shadow: #777777 -1px 3px 0.5rem;
+}
+
+details > ul {
+  padding: 1rem 10rem;
+}
+
+
+.last-child {
+  background-color: aquamarine;
+  width: 160px;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  box-shadow: #777777 -1px 3px 0.5rem; 
+}
