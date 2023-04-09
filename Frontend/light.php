@@ -1,0 +1,33 @@
+<?php
+// connect to the database
+$servername = "localhost";
+$username = "root";
+$password = "Edlanta39!";
+$dbname = "website";
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+// check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+$location = $_POST['location'];
+$light_level = $_POST['light'];
+
+// Prepare and bind the SQL statement
+$stmt = $conn->prepare("INSERT INTO light (light_level, location) VALUES (?, ?)");
+$stmt->bind_param("ds", $light_level, $location);
+
+// Set parameters and execute the statement
+$stmt->execute();
+
+echo "Humidity level submitted successfully.";
+
+$stmt->close();
+$conn->close();
+
+// redirect to success page
+header("Location: success.html");
+exit();
+?>
