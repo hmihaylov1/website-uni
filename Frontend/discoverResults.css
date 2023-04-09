@@ -6,7 +6,6 @@
   text-align: left;
   font-size: 15px;
   font-family: 'Fredoka One';
-
 }
 /* Global styles */
 
@@ -130,27 +129,45 @@ button {
 }
 
 /* Center the button */
+/* center div */
 .center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin-top: 20px;
 }
-/* Style the button */
+
+/* button styles */
 .button {
   display: inline-block;
-  padding: 15px 30px;
-  font-family: 'Fredoka One', sans-serif;
+  background-color: #6bb5ff;
+  color: white;
   font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  background-color: #EB0E0E;
-  border-radius: 50px;
-  transition: background-color 0.3s ease;
+  padding: 20px 30px;
+  margin: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
 }
-/* Change the button color on hover */
 .button:hover {
-  background-color: #3e8e41;
+  background-color: #4d8fe7;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+.button {
+  text-decoration: none;
+}
+
+footer {
+  background-color:#A6D9F5;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+footer img {
+  margin-top: 1rem;
 }
