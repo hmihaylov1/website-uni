@@ -13,7 +13,7 @@ if (!$conn) {
 }
 
 $location = $_POST['location'];
-$light_level = $_POST['light'];
+$light_level = $_POST['light_level'];
 
 // Prepare and bind the SQL statement
 $stmt = $conn->prepare("INSERT INTO light (light_level, location) VALUES (?, ?)");
