@@ -1,0 +1,135 @@
+/* Body styles */
+body {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    /* background: white; */
+    background: linear-gradient(to bottom right, #FFFFFF, #BBF0F8);
+    scroll-behavior: smooth;
+}
+
+/* Container styles */
+.container {
+  margin: 50px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Title styles */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+/* Button styles */
+button {
+  font-size: 2rem;
+  padding: 20px 50px;
+  border-radius: 10px;
+  background-color: #EB0E0E;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+button:hover {
+  background-color: #EB0E0E;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal content styles */
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  position: relative;
+  animation-name: modalopen;
+  animation-duration: 0.5s;
+}
+
+/* Close button styles */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #EB0E0E;
+}
+
+/* Table styles */
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  font-size: 2rem;
+  text-align: left;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+td {
+  font-size: 1.5rem;
+  padding: 5px 0;
+}
+
+input[type="text"] {
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+  font-size: 2rem;
+  padding: 20px 50px;
+  border-radius: 10px;
+  background-color: #EB0E0E;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  margin-left: 200px;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+input[type="submit"]:hover {
+  background-color: #EB0E0E;
+}
+
+/* Animations */
+@keyframes modalopen {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
