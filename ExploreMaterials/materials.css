@@ -103,3 +103,8 @@ details > ul {
   border-radius: 0.5rem;
   box-shadow: #777777 -1px 3px 0.5rem; 
 }
+
+a {
+  text-decoration: none;
+  color: #4d4d4d ;
+}
