@@ -4,50 +4,177 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(to right bottom, #1d93ff, #00abff, #00c0ff, #00d2f8, #12e2eb);
+  background: linear-gradient(to bottom right, #FFFFFF, #BBF0F8);
   font-family: 'Fredoka One', sans-serif;
   color: #4d4d4d;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-areas: "header" "main" "footer";
 }
 
-nav {
-  width: 100%;
-  height: 3rem;
+/* <---------------------- NAVBAR CONTENT BEGINING ---------------------------------------------> */
+
+/* Header styles */
+header {
+  grid-area: header;
+  background-color: #30A1F4;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.my-website-heading {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.head-button {
+  border-radius: 40px;
+  padding: 10px 20px;
+  background-color: #FADE4D;
+  color: #434D66;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+.head-button-diff {
+  border-radius: 40px;
+  padding: 10px 20px;
+  background-color: #FA5959;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+/* Search Bar Styles */
+.search-container {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+.search-container form {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  padding: 8px;
+  border: none;
+  font-size: 20px;
+  background: #6CBAF2;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem 1.9rem;
+  font-size: 16px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the dropdown content when the dropdown button is hovered over */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* <---------------------- NAVBAR CONTENT END ---------------------------------------------> */
+
+/* <---------------------- MAIN CONTENT BEGINING ---------------------------------------------> */
+
+.heading-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding-left: 1rem;
-}
-
-nav > h1 {
-  color: #576571;
-}
-
-.back-arrow {
-  margin-top: 8px;
-  margin-right: 0.8rem;
+  gap: 1rem;
+  padding-bottom: 1rem;
 }
 
 main {
+  background: linear-gradient(to bottom right, #FFFFFF, #BBF0F8);
+  grid-area: main;
   width: 100%;
   height: 100%;
-  padding: 2rem;
+  padding: 1.8rem;
 }
 
 ul.tree {
   width: 100%;
 }
 
-ul li {
+ul.tree li {
   position: relative;
   list-style: none;
   padding: 0.5rem 0;
 }
 
-li:before, li:after {
+li:before,
+li:after {
   content: '';
   position: absolute;
   left: -22px;
@@ -91,7 +218,7 @@ summary {
   box-shadow: #777777 -1px 3px 0.5rem;
 }
 
-details > ul {
+details>ul {
   padding: 1rem 10rem;
 }
 
@@ -101,10 +228,47 @@ details > ul {
   width: 160px;
   padding: 0.8rem;
   border-radius: 0.5rem;
-  box-shadow: #777777 -1px 3px 0.5rem; 
+  box-shadow: #777777 -1px 3px 0.5rem;
 }
 
-a {
-  text-decoration: none;
-  color: #4d4d4d ;
+
+/* <---------------------- MAIN CONTENT END ---------------------------------------------> */
+
+/* <---------------------- FOOTER CONTENT BEGINNING ---------------------------------------------> */
+
+footer {
+  grid-area: footer;
+  background-color: #A6D9F5;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
 }
+
+footer img {
+  margin-top: 1rem;
+}
+
+/* <---------------------- FOOTER CONTENT END ---------------------------------------------> */
+
+/* <---------------------- RESPONSIVE QUERIES BEGINNING ---------------------------------------------> */
+
+@media (min-width: 1073px) {
+  .nav-1 {
+    display: none;
+  }
+}
+
+@media (max-width: 1072px) {
+  .nav-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .search-container form {
+    display: none;
+  }
+}
+
+
+/* <---------------------- RESPONSIVE QUERIES END ---------------------------------------------> */
