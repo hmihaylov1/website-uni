@@ -3,9 +3,32 @@
   <head>
     <title>Humidity Chart</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../Frontend/style.css">
     <link rel="stylesheet" href="results.css">
+    <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
   </head>
   <body>
+
+    <header>
+      <a href="#" class="my-website-heading"><h1>My Website</h1></a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search...">
+        </form>
+      </div>
+  
+      <nav class="nav-2">
+        <ul>
+          <li><button class="head-button" id="share-knowledge2">Share Knowledge</button></li>
+          <li><a href="../Frontend/discoverResults.html" class="head-button">Discover Results</a></li>
+          <li><a href="../ExploreMaterials/ExploreMaterials.html" class="head-button">Explore Materials</a></li>
+          <li><a href="#" class="head-button">Unlock Adventures</a></li>
+          <li><a href="#" class="head-button-diff">My World</a></li>
+        </ul>
+      </nav>
+  
+    </header>
+
     <canvas id="myChart" width="600" height="400"></canvas>
     <script src="chart_Humidity.js"></script>
   </body>
