@@ -1,25 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Temperature Form</title>
 	<link rel="stylesheet" type="text/css" href="pages.css">
 	<link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
 </head>
+
 <body>
-	<div class="modal">
-		<h2>Enter Temperature</h2>
-		<form method="post" action="temperature.php">
-			<a href="website.html">
-				<img src="../Images/93634.png" alt="Back Button" width="40px" height="40px">
-			</a>
-			<label for="location">Location:</label>
-			<input type="text" name="location" id="location" required><br><br>
+	<div class="container">
+		<div class="modal">
+			<div class="form-header">
+				<div class="back-arrow-div">
+					<a href="website.html">
+						<img src="../Images/93634.png" alt="Back Button" width="40px" height="40px">
+					</a>
+				</div>
+				<div class="heading-div">
+					<h2>Enter Temperature</h2>
+				</div>
+			</div>
 
-			<label for="temperature">Temperature:</label>
-			<input type="number" name="temperature" id="temperature" required><br><br>
+			<form method="post" action="temperature.php">
+				<label for="location">Location:</label>
+				<input type="text" name="location" id="location" required><br><br>
 
-			<input type="submit" value="Submit">
-		</form>
+				<label for="temperature">Temperature:</label>
+				<input type="number" name="temperature" id="temperature" required><br><br>
+
+				<input type="submit" value="Submit">
+			</form>
+		</div>
 	</div>
 </body>
+
 </html>

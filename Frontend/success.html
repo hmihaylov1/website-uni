@@ -1,99 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
 	<title>Measurement Stored Successfully</title>
-	<style>
-		body {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 100vh;
-			font-family: 'Fredoka One', sans-serif;
-		}
-
-        #success-modal {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: linear-gradient(to bottom right, #FFFFFF, #BBF0F8);
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			z-index: 999;
-		}
-
-		#success-modal h2 {
-			color: #000000;
-			font-size: 36px;
-			margin-bottom: 20px;
-		}
-
-		#success-modal p {
-			color: #000000;
-			font-size: 24px;
-			margin-bottom: 20px;
-		}
-
-		#success-modal button {
-			background-color: #EB0E0E;
-			border: none;
-			color: #fff;
-			cursor: pointer;
-			font-size: 24px;
-			font-family: 'Fredoka One', sans-serif;
-			padding: 10px 20px;
-			transition: background-color 0.3s;
-		}
-
-		#success-modal button:hover {
-			background-color: #C61717;
-		}
-
-		#success-modal span {
-			color: #EB0E0E;
-			font-weight: bold;
-			font-size: 36px;
-			margin-top: 20px;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="success.css">
 </head>
-<body>
 
-    <div id="success-modal" class="modal">
-		<h2>Success!</h2>
-		<p>The measurement has been done successfully.</p>
-		<button id="back-btn">Back to Main Page</button>
-		<br>
-		<a href="temperature.html">
-			<button id="another-btn">Take Another Measurement</button>
-		</a>
-		<br>
-		<a href="discoverResults.html">
-			<button id="another-btn">Discover Results</button>
-		</a>
-		<p>You will be redirected in <span id="countdown">10</span> seconds.</p>
+<body>
+	<div class="container">
+		<div id="success-modal" class="modal">
+			<h2>Success!</h2>
+			<p>The measurement has been done successfully.</p>
+			<div class="button-div">
+				<button id="back-btn">Back to Main Page</button>
+				<a href="temperature.html">
+					<button id="another-btn">Take Another Measurement</button>
+				</a>
+				<a href="discoverResults.html">
+					<button id="another-btn">Discover Results</button>
+				</a>
+			</div>
+			<p>You will be redirected in <span id="countdown">30</span> seconds.</p>
+		</div>
 	</div>
-    
-    <script>
-        // redirect to website.html after 10 seconds
-        var count = 30;
-        var countdown = setInterval(function() {
-            count--;
-            document.getElementById("countdown").innerHTML = count;
-            if (count == 0) {
-                clearInterval(countdown);
-                window.location.href = "website.html";
-            }
-        }, 1000);
-        
-        // go to website.html when back button is clicked
-        document.getElementById("back-btn").addEventListener("click", function() {
-            window.location.href = "website.html";
-        });
-    </script>
+
+	<script>
+		var count = 30;
+		var countdown = setInterval(function () {
+			count--;
+			document.getElementById("countdown").innerHTML = count;
+			if (count == 0) {
+				clearInterval(countdown);
+				window.location.href = "website.html";
+			}
+		}, 1000);
+
+		// go to website.html when back button is clicked
+		document.getElementById("back-btn").addEventListener("click", function () {
+			window.location.href = "website.html";
+		});
+	</script>
 </body>
+
 </html>

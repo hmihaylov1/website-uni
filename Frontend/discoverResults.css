@@ -1,33 +1,30 @@
 
 /* Global styles */
 
-body {
-  font-family: 'Fredoka One', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+* {
   margin: 0;
-  background: linear-gradient(to bottom right, #FFFFFF, #BBF0F8);
-  scroll-behavior: smooth;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
   width: 100%;
   height: 100vh;
+  background: linear-gradient(to bottom right, #FFFFFF, #BBF0F8);
+  font-family: 'Fredoka One', sans-serif;
+  color: #4d4d4d;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 10fr 1fr;
-  grid-template-areas: header center footer;
+  grid-template-areas: "header" "main" "footer"; 
 }
 
-/*header section */
-.header-section {
-  background-color: #A6D9F5;
-  padding: 1px;
-  padding-left: 1rem;
-  text-align: left;
-  font-size: 15px;
-  font-family: 'Fredoka One';
-}
-  
+/* <---------------------- NAVBAR CONTENT BEGINING ---------------------------------------------> */
+
 /* Header styles */
 header {
+  grid-area: header;
   background-color: #30A1F4;
   color: #fff;
   display: flex;
@@ -36,9 +33,10 @@ header {
   padding: 15px 25px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 28px;
+
+.my-website-heading {
+  text-decoration: none;
+  color: #fff;
 }
 
 nav ul {
@@ -57,41 +55,11 @@ nav a {
   text-decoration: none;
 }
 
-/* Main content styles */
-main {
-  padding: 20px;
-}
-
-section h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-section h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-section p {
-  margin: 0;
-}
-
-button {
-  margin: 20px;
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
 .head-button {
   border-radius: 40px;
   padding: 10px 20px;
   background-color: #FADE4D;
   color: #434D66;
-
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -99,6 +67,7 @@ button {
   margin: 4px 2px;
   cursor: pointer;
   font-family: 'Fredoka One', sans-serif;
+  border: none;
 }
 
 .head-button-diff {
@@ -114,6 +83,7 @@ button {
   cursor: pointer;
   font-family: 'Fredoka One', sans-serif;
 }
+
 /* Search Bar Styles */
 .search-container {
   display: flex;
@@ -135,8 +105,64 @@ button {
   font-family: 'Fredoka One', sans-serif;
 }
 
-/* Center the button */
-/* center div */
+/* Style the dropdown button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem 1.9rem;
+  font-size: 16px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the dropdown content when the dropdown button is hovered over */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* <---------------------- NAVBAR CONTENT END ---------------------------------------------> */
+
+/* <---------------------- MAIN CONTENT BEGINING ---------------------------------------------> */
+
+.heading-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+main {
+  background: linear-gradient(to bottom right, #FFFFFF, #BBF0F8);
+  grid-area: main;
+  width: 100%;
+  height: 100%;
+  padding: 1.8rem;
+}
+
+
 .center {
   display: flex;
   flex-direction: column;
@@ -159,23 +185,29 @@ button {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
 }
+
 .button:hover {
   background-color: #4d8fe7;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
 }
+
 .button {
   text-decoration: none;
 }
 
-
-.discover-results-nav-heading {
-  text-decoration: none;
-  color: white;
+.discover-results-heading {
+  text-align: center;
 }
 
+
+/* <---------------------- MAIN CONTENT END ---------------------------------------------> */
+
+/* <---------------------- FOOTER CONTENT BEGINNING ---------------------------------------------> */
+
 footer {
-  background-color:#A6D9F5;
+  grid-area: footer;
+  background-color: #A6D9F5;
   color: black;
   padding: 10px 20px;
   text-align: center;
@@ -184,3 +216,28 @@ footer {
 footer img {
   margin-top: 1rem;
 }
+
+/* <---------------------- FOOTER CONTENT END ---------------------------------------------> */
+
+/* <---------------------- RESPONSIVE QUERIES BEGINNING ---------------------------------------------> */
+
+@media (min-width: 1073px) {
+  .nav-1 {
+    display: none;
+  }
+}
+
+@media (max-width: 1072px) {
+  .nav-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .search-container form {
+    display: none;
+  }
+}
+
+
+/* <---------------------- RESPONSIVE QUERIES END ---------------------------------------------> */

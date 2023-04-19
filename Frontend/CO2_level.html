@@ -1,25 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CO2 Form</title>
 	<link rel="stylesheet" type="text/css" href="pages.css">
 	<link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
 </head>
+
 <body>
-	<div class="modal">
-		<form method="post" action="CO2_level.php">
-			<a href="website.html">
-				<img src="../Images/93634.png" alt="Back Button" width="40px" height="40px">
-			</a>			  
-			<h2>CO2 Level</h2>
-			<label for="co2_level">CO2 Level:</label>
-			<input type="number" name="co2_level" id="co2_level" step="any" required><br><br>
+	<div class="container">
+		<div class="modal">
+			<div class="form-header">
+				<div class="back-arrow-div">
+				  <a href="website.html">
+					<img src="../Images/93634.png" alt="Back Button" width="40px" height="40px">
+				  </a>
+				</div>
+				<div class="heading-div"><h2>CO2 Level</h2></div>
+			  </div>
+			<form method="post" action="CO2_level.php">
+				<label for="co2_level">CO2 Level:</label>
+				<input type="number" name="co2_level" id="co2_level" step="any" required><br><br>
 
-			<label for="location">Location:</label>
-			<input type="text" name="location" id="location" required><br><br>
+				<label for="location">Location:</label>
+				<input type="text" name="location" id="location" required><br><br>
 
-			<input type="submit" value="Submit">
-		</form>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
 	</div>
 </body>
+
 </html>
