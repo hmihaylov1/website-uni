@@ -13,42 +13,42 @@
     </a>
 
     <div class="container">
-      <h1>CO2 Measurement Workshop</h1>
-      <p>Welcome to our CO2 measurement workshop! We would like you to enter data about the CO2 level and the location where you measured it.</p>
+      <h1>Humidity Measurement Workshop</h1>
+      <p>Welcome to our humidity measurement workshop! We would like you to enter data about the humidity level and the location where you measured it.</p>
       <button id="modal-btn">LET'S GO</button>
     </div>
 
     <div id="modal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <h2>Enter CO2 Level and Location Data</h2>
-        <form id="temp-form" action="W2_CO2.php" method="post">
+        <h2>Enter Humidity and Location Data</h2>
+        <form id="temp-form" action="W3_hum.php" method="post">
           <table>
             <thead>
               <tr>
-                <th>CO2_level</th>
+                <th>Humidity</th>
                 <th>Location</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><input type="text" name="co2_level[]"></td>
+                <td><input type="text" name="humidity_level[]"></td>
                 <td><input type="text" name="location[]"></td>
               </tr>
               <tr>
-                <td><input type="text" name="co2_level[]"></td>
+                <td><input type="text" name="humidity_level[]"></td>
                 <td><input type="text" name="location[]"></td>
               </tr>
               <tr>
-                <td><input type="text" name="co2_level[]"></td>
+                <td><input type="text" name="humidity_level[]"></td>
                 <td><input type="text" name="location[]"></td>
               </tr>
               <tr>
-                <td><input type="text" name="co2_level[]"></td>
+                <td><input type="text" name="humidity_level[]"></td>
                 <td><input type="text" name="location[]"></td>
               </tr>
               <tr>
-                <td><input type="text" name="co2_level[]"></td>
+                <td><input type="text" name="humidity_level[]"></td>
                 <td><input type="text" name="location[]"></td>
               </tr>
             </tbody>
@@ -58,6 +58,6 @@
       </div>
     </div>
 
-    <script src="W2_script.js"></script>
+    <script src="W3_script.js"></script>
   </body>
 </html>
