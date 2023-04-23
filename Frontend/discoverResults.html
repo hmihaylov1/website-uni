@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="discoverResults.css">
+  <link rel="stylesheet" href="../Measurements/shareKnowledgePopUp.css">
   <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
   <title>Explore Materials</title>
 </head>
@@ -23,7 +24,7 @@
           <div class="dropdown">
             <button class="dropbtn">Menu</button>
             <div class="dropdown-content">
-              <a href="#" id="share-knowledge1" class="head-button">Share Knowledge</a>
+              <a href="#" id="share-knowledge4" class="head-button">Share Knowledge</a>
               <a href="../Frontend/discoverResults.html" class="head-button">Discover Results</a>
               <a href="../ExploreMaterials/ExploreMaterials.html" class="head-button">Explore Materials</a>
               <a href="#" class="head-button">Unlock Adventures</a>
@@ -35,7 +36,7 @@
 
       <nav class="nav-2">
         <ul>
-          <li><button class="head-button" id="share-knowledge2">Share Knowledge</button></li>
+          <li><button class="head-button" id="share-knowledge5">Share Knowledge</button></li>
           <li><a href="../Frontend/discoverResults.html" class="head-button">Discover Results</a></li>
           <li><a href="../ExploreMaterials/ExploreMaterials.html" class="head-button">Explore Materials</a></li>
           <li><a href="#" class="head-button">Unlock Adventures</a></li>
@@ -52,6 +53,43 @@
         <a href="../DiscoverResults/results_CO2.html" class="button">CO2 Level</a>
         <a href="../DiscoverResults/results_Humidity.html" class="button">Humidity</a>
         <a href="../DiscoverResults/results.html" class="button">Light</a>
+      </div>
+
+
+      <!-- Share Knowledge popup -->
+      <div id="modal-dialog" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="button-container">
+            <div class="button1">
+              <div class="button-section">
+                <a href="../Frontend/humidity.html">
+                  <button class="modal-button" id="humidity-button">Humidity</button>
+              </div>
+            </div>
+            <div class="button2">
+              <div class="button-section">
+                <a href="../Frontend/CO2_level.html">
+                  <button class="modal-button" id="co2-button">CO2</button>
+                </a>
+              </div>
+            </div>
+            <div class="button3">
+              <div class="button-section">
+                <a href="../Frontend/light.html">
+                  <button class="modal-button" id="light-button">Light</button>
+                </a>
+              </div>
+            </div>
+            <div class="button4">
+              <div class="button-section">
+                <a href="../Frontend/temperature.html">
+                  <button class="modal-button" id="temperature-button">Temperature</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 

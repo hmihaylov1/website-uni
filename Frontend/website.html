@@ -27,7 +27,7 @@
         <div class="dropdown">
           <button class="dropbtn">Menu</button>
           <div class="dropdown-content">
-            <a href="#" id="share-knowledge1" class="head-button">Share Knowledge</a>
+            <a href="#" id="share-knowledge1" class="head-button share-knowledge-btns">Share Knowledge</a>
             <a href="discoverResults.html" class="head-button">Discover Results</a>
             <a href="../ExploreMaterials/ExploreMaterials.html" class="head-button">Explore Materials</a>
             <a href="#" class="head-button">Unlock Adventures</a>
@@ -39,7 +39,7 @@
 
     <nav class="nav-2">
       <ul>
-        <li><button class="head-button" id="share-knowledge2">Share Knowledge</button></li>
+        <li><button class="head-button share-knowledge-btns" id="share-knowledge2">Share Knowledge</button></li>
         <li><a href="discoverResults.html" class="head-button">Discover Results</a></li>
         <li><a href="../ExploreMaterials/ExploreMaterials.html" class="head-button">Explore Materials</a></li>
         <li><a href="#" class="head-button">Unlock Adventures</a></li>
@@ -51,45 +51,6 @@
 
   </header>
   <main>
-
-
-    <!-- Share Knowledge popup -->
-    <div id="modal-dialog" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="button-container">
-          <div class="button1">
-            <div class="button-section">
-              <a href="humidity.html">
-                <button class="modal-button" id="humidity-button">Humidity</button>
-            </div>
-          </div>
-          <div class="button2">
-            <div class="button-section">
-              <a href="CO2_level.html">
-                <button class="modal-button" id="co2-button">CO2</button>
-              </a>
-            </div>
-          </div>
-          <div class="button3">
-            <div class="button-section">
-              <a href="light.html">
-                <button class="modal-button" id="light-button">Light</button>
-              </a>
-            </div>
-          </div>
-          <div class="button4">
-            <div class="button-section">
-              <a href="temperature.html">
-                <button class="modal-button" id="temperature-button">Temperature</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
     <section class="section1">
       <div class="welcome">
         <h2>Making Data Accessible and Fun</h2>
@@ -98,17 +59,18 @@
         <a class="watch-video">Watch Video</a>
       </div>
       <div class="welcome-p">
-        <p>Welcome to our website! We have a really cool tool that 
-          helps schools manage their learning stuff and try out fun 
+        <p>Welcome to our website! We have a really cool tool that
+          helps schools manage their learning stuff and try out fun
           ways to check how their buildings are doing. Our goal is to
-          help teachers make learning even more awesome for you 
-          and your friends. Come check out our tool and see how we 
+          help teachers make learning even more awesome for you
+          and your friends. Come check out our tool and see how we
           can help make school super fun!</p>
       </div>
       <div class="watch-vid-container">
         <div class="watch-inner-container">
-          <img src="../Images/253-2533695_manage-all-health-monitoring-data-in-one-place-google-analytics-icons-free.png"
-          alt="kartinka" class="snimchica">
+          <img
+            src="../Images/253-2533695_manage-all-health-monitoring-data-in-one-place-google-analytics-icons-free.png"
+            alt="kartinka" class="snimchica">
         </div>
       </div>
     </section>
@@ -127,13 +89,14 @@
           information to make changes to improve the air quality, like opening windows or using air filters.</p>
       </div>
       <div class="share-knowledge-btn">
-        <button class="head-button" id="share-knowledge3">Share Knowledge</button>
+        <button class="head-button share-knowledge-btns" id="share-knowledge3">Share Knowledge</button>
       </div>
       <div class="discover-results-btn">
-        <a href="discoverResults.html" class="head-button">Discover Results</a> 
+        <a href="discoverResults.html" class="head-button">Discover Results</a>
       </div>
-      <div class="discover-results-p"> 
-        <p class="text-2" align="justify">Hey there! The data you collect is important because it tells us about the world
+      <div class="discover-results-p">
+        <p class="text-2" align="justify">Hey there! The data you collect is important because it tells us about the
+          world
           around us. Just like how
           CO2 levels can show us air quality, data can tell us about things like the weather, animals, or what people
           like to eat. When you put your data in a table, it's easy to compare and understand. You can see how things
@@ -145,7 +108,7 @@
         <p>"Explore Materials" is a super cool button that takes you to a page with all kinds of fun resources like
           games and quizzes to help you with your lessons, as well as workshops where you can learn and explore
           new ideas with other kids. Click on it and have a blast learning and discovering new things!</p>
-        
+
       </div>
       <div class="explore-materials-btn">
         <a href="../ExploreMaterials/ExploreMaterials.html" class="head-button">Explore Materials</a>
@@ -154,12 +117,13 @@
         <a href="unlockAdventures.html" class="head-button">Unlock Adventures</a>
       </div>
       <div class="unlock-adventures-p">
-        <p class="text-3" align="justify">Hey kids, get ready for an adventure! Click on the "Unlock Adventures" button on
+        <p class="text-3" align="justify">Hey kids, get ready for an adventure! Click on the "Unlock Adventures" button
+          on
           our website to go
           to a new page with lots of hyperlinks. Hyperlinks are like magical doors to other websites full of
           amazing information. When you click on one, you can explore and learn all sorts of cool things!</p>
       </div>
-      
+
     </section>
 
 
@@ -188,13 +152,49 @@
         We love hearing from our friends and we're always here to help you out.</p>
     </section>
     <!-- <img class= "snimchica_about" src = "253-2533695_manage-all-health-monitoring-data-in-one-place-google-analytics-icons-free.png" alt="kartinkata" width="250" height="250"> -->
+
+    <!-- Share Knowledge popup -->
+    <div id="modal-dialog" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="button-container">
+          <div class="button1">
+            <div class="button-section">
+              <a href="../Frontend/humidity.html">
+                <button class="modal-button" id="humidity-button">Humidity</button>
+            </div>
+          </div>
+          <div class="button2">
+            <div class="button-section">
+              <a href="../Frontend/CO2_level.html">
+                <button class="modal-button" id="co2-button">CO2</button>
+              </a>
+            </div>
+          </div>
+          <div class="button3">
+            <div class="button-section">
+              <a href="../Frontend/light.html">
+                <button class="modal-button" id="light-button">Light</button>
+              </a>
+            </div>
+          </div>
+          <div class="button4">
+            <div class="button-section">
+              <a href="../Frontend/temperature.html">
+                <button class="modal-button" id="temperature-button">Temperature</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
     <img src="../Images/Facebook-logo.png" alt="Twitter-logo" width="110px" height="70px">
     <p>&copy; 2023 My Website. All rights reserved.</p>
   </footer>
-  
+
   <script src="../Measurements/shareKnowledgePopUp.js"></script>
   <script src="website.js"></script>
   <script src="navbar-dropdown.js"></script>
