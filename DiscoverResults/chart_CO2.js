@@ -9,7 +9,7 @@ var chartData = {
       label: "CO2 Level",
       data: [],
       fill: false,
-      borderColor: "rgb(75, 192, 192)",
+      borderColor: "rgb(237, 117, 5)",
       tension: 0.1,
     },
   ],

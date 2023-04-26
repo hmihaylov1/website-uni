@@ -9,7 +9,7 @@ var chartData = {
       label: "Humidity",
       data: [],
       fill: false,
-      borderColor: "rgb(75, 192, 192)",
+      borderColor: "rgb(240, 41, 26)",
       tension: 0.1,
     },
   ],
