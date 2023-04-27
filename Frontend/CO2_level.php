@@ -26,6 +26,6 @@ $stmt->close();
 $conn->close();
 
 // redirect to success page
-header("Location: success.html");
+header("Location: success_CO2.html");
 exit();
 ?>
