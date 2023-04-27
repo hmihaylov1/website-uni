@@ -29,6 +29,6 @@ if (mysqli_query($conn, $sql)) {
 mysqli_close($conn);
 
 // redirect to success page
-header("Location: success.html");
+header("Location: success_temperature.html");
 exit();
 ?>

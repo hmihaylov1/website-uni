@@ -28,6 +28,6 @@ $stmt->close();
 $conn->close();
 
 // redirect to success page
-header("Location: success.html");
+header("Location: success_light.html");
 exit();
 ?>
