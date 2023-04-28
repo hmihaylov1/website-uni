@@ -4,9 +4,17 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
-    /* background: white; */
+    background-color: white;
     background: linear-gradient(to bottom right, #FFFFFF, #BBF0F8);
     scroll-behavior: smooth;
+}
+
+/* Back arrow style */
+.back-arrow-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
 }
 
 /* Container styles */
@@ -39,7 +47,7 @@ button:hover {
 }
 
 /* Modal styles */
-.modal {
+.modal2 {
   display: none;
   position: fixed;
   z-index: 1;
@@ -52,19 +60,19 @@ button:hover {
 }
 
 /* Modal content styles */
-.modal-content {
+.modal-content2 {
   background-color: #fff;
   margin: 10% auto;
   padding: 20px;
   border-radius: 10px;
-  max-width: 600px;
+  max-width: 620px;
   position: relative;
   animation-name: modalopen;
   animation-duration: 0.5s;
 }
 
 /* Close button styles */
-.close {
+.close2 {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -74,30 +82,30 @@ button:hover {
   cursor: pointer;
 }
 
-.close:hover {
+.close2:hover {
   color: #EB0E0E;
 }
 
 /* Table styles */
-table {
+.model2-table {
   margin-top: 20px;
   border-collapse: collapse;
   width: 100%;
 }
 
-th {
+.model2-th {
   font-size: 2rem;
   text-align: left;
   border-bottom: 2px solid #333;
   padding-bottom: 10px;
 }
 
-td {
+.model2-td {
   font-size: 1.5rem;
   padding: 5px 0;
 }
 
-input[type="text"] {
+.model2-text {
   font-size: 1.5rem;
   padding: 10px;
   border-radius: 5px;
@@ -105,7 +113,7 @@ input[type="text"] {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-input[type="submit"] {
+.model2-submit {
   font-size: 2rem;
   padding: 20px 50px;
   border-radius: 10px;
@@ -118,7 +126,7 @@ input[type="submit"] {
   font-family: 'Fredoka One', sans-serif;
 }
 
-input[type="submit"]:hover {
+.model2-submit:hover {
   background-color: #EB0E0E;
 }
 
