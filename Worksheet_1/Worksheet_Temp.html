@@ -1,117 +1,159 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Temperature Measurement</title>
-    <link rel="stylesheet" href="../Frontend/style.css">
-    <link rel="stylesheet" type="text/css" href="W1_Style.css">
-    <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
-  </head>
-  
-  <body>
+<html lang="en">
 
-    <header>
-      <a href="../Frontend/website.html" class="my-website-heading"><img src="../Images/pak.png" width="150px" height="75px"></a>
-      <div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search...">
-        </form>
-  
-        <nav class="nav-1">
-          <div class="dropdown">
-            <button class="dropbtn">Menu</button>
-            <div class="dropdown-content">
-              <a href="#" id="share-knowledge1" class="head-button share-knowledge-btns">Share Knowledge</a>
-              <a href="discoverResults.html" class="head-button">Discover Results</a>
-              <a href="../ExploreMaterials/ExploreMaterials.html" class="head-button">Explore Materials</a>
-              <a href="#" class="head-button">Unlock Adventures</a>
-              <a href="#" class="head-button-diff">My World</a>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Measurement</title>
+  <link rel="stylesheet" href="../Frontend/style.css">
+  <link rel="stylesheet" type="text/css" href="W1_Style.css">
+  <link rel="stylesheet" href="../Measurements/shareKnowledgePopUp.css">
+  <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+</head>
+
+<body>
+
+  <header>
+    <a href="../Frontend/website.html" class="my-website-heading"><img src="../Images/pak.png" width="150px"
+        height="75px"></a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search...">
+      </form>
+
+      <nav class="nav-1">
+        <div class="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+            <a href="#" id="share-knowledge1" class="head-button share-knowledge-btns">Share Knowledge</a>
+            <a href="../Frontend/discoverResults.html" class="head-button">Discover Results</a>
+            <a href="../ExploreMaterials/ExploreMaterials.html" class="head-button">Explore Materials</a>
+            <a href="#" class="head-button">Unlock Adventures</a>
+            <a href="#" class="head-button-diff">My World</a>
           </div>
-        </nav>
-      </div>
-  
-      <nav class="nav-2">
-        <ul>
-          <li><button class="head-button share-knowledge-btns" id="share-knowledge2">Share Knowledge</button></li>
-          <li><a href="discoverResults.html" class="head-button">Discover Results</a></li>
-          <li><a href="../ExploreMaterials/ExploreMaterials.html" class="head-button">Explore Materials</a></li>
-          <li><a href="#" class="head-button">Unlock Adventures</a></li>
-          <li><a href="#" class="head-button-diff">My World</a></li>
-        </ul>
+        </div>
       </nav>
-  
-  
-  
-    </header>
-
-
-    <a href="../ExploreMaterials/ExploreMaterials.html">
-        <img src="../Images/93634.png" alt="Back Button" width="40px" height="40px">
-    </a>
-
-    <div class="container">
-      <h1>Hot and Cold: Exploring Temperature</h1>
-      <p>In this workshop, you'll become a temperature explorer and measure the heat in different
-        places around our school. You'll use thermometers to measure temperatures in the classroom,
-        the cafeteria, and even outside. You'll then analyze your data to discover where it's hottest
-        and coolest in our school, and explore how temperature affects our daily activities.</p>
-      <button id="modal-btn">LET'S GO</button>
     </div>
 
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Enter Temperature and Location Data</h2>
-        <form id="temp-form" action="W1_temp.php" method="post">
-          <table>
-            <thead>
-              <tr>
-                <th>Temperature</th>
-                <th>Location</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><input type="text" name="temperature[]"></td>
-                <td><input type="text" name="location[]"></td>
-              </tr>
-              <tr>
-                <td><input type="text" name="temperature[]"></td>
-                <td><input type="text" name="location[]"></td>
-              </tr>
-              <tr>
-                <td><input type="text" name="temperature[]"></td>
-                <td><input type="text" name="location[]"></td>
-              </tr>
-              <tr>
-                <td><input type="text" name="temperature[]"></td>
-                <td><input type="text" name="location[]"></td>
-              </tr>
-              <tr>
-                <td><input type="text" name="temperature[]"></td>
-                <td><input type="text" name="location[]"></td>
-              </tr>
-            </tbody>
-          </table>
-          <input type="submit" value="Submit">
-        </form>
+    <nav class="nav-2">
+      <ul>
+        <li><button class="head-button share-knowledge-btns" id="share-knowledge2">Share Knowledge</button></li>
+        <li><a href="../Frontend/discoverResults.html" class="head-button">Discover Results</a></li>
+        <li><a href="../ExploreMaterials/ExploreMaterials.html" class="head-button">Explore Materials</a></li>
+        <li><a href="#" class="head-button">Unlock Adventures</a></li>
+        <li><a href="#" class="head-button-diff">My World</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="back-arrow-container">
+    <a href="../ExploreMaterials/ExploreMaterials.html">
+      <img src="../Images/93634.png" alt="Back Button" width="40px" height="40px">
+    </a>
+  </div>
+
+  <div class="container">
+    <h1>Hot and Cold: Exploring Temperature</h1>
+    <p>In this workshop, you'll become a temperature explorer and measure the heat in different
+      places around our school. You'll use thermometers to measure temperatures in the classroom,
+      the cafeteria, and even outside. You'll then analyze your data to discover where it's hottest
+      and coolest in our school, and explore how temperature affects our daily activities.</p>
+    <button id="modal-btn2">LET'S GO</button>
+  </div>
+
+  <div id="modal2" class="modal2">
+    <div class="modal-content2">
+      <span class="close2">&times;</span>
+      <h2>Enter Temperature and Location Data</h2>
+      <form id="temp-form" action="W1_temp.php" method="post">
+        <table class="model2-table">
+          <thead class="model2-th">
+            <tr>
+              <th>Temperature</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="model2-td"><input class="model2-text" type="text" name="temperature[]"></td>
+              <td class="model2-td"><input class="model2-text" type="text" name="location[]"></td>
+            </tr>
+            <tr>
+              <td class="model2-td"><input class="model2-text" type="text" name="temperature[]"></td>
+              <td class="model2-td"><input class="model2-text" type="text" name="location[]"></td>
+            </tr>
+            <tr>
+              <td class="model2-td"><input class="model2-text" type="text" name="temperature[]"></td>
+              <td class="model2-td"><input class="model2-text" type="text" name="location[]"></td>
+            </tr>
+            <tr>
+              <td class="model2-td"><input class="model2-text" type="text" name="temperature[]"></td>
+              <td class="model2-td"><input class="model2-text" type="text" name="location[]"></td>
+            </tr>
+            <tr>
+              <td class="model2-td"><input class="model2-text" type="text" name="temperature[]"></td>
+              <td class="model2-td"><input class="model2-text" type="text" name="location[]"></td>
+            </tr>
+          </tbody>
+        </table>
+        <input type="submit" value="Submit" class="model2-submit">
+      </form>
+    </div>
+  </div>
+
+  <!-- Share Knowledge popup -->
+  <div id="modal-dialog" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="button-container">
+        <div class="button1">
+          <div class="button-section">
+            <a href="../Frontend/humidity.html">
+              <button class="modal-button" id="humidity-button">Humidity</button>
+          </div>
+        </div>
+        <div class="button2">
+          <div class="button-section">
+            <a href="../Frontend/CO2_level.html">
+              <button class="modal-button" id="co2-button">CO2</button>
+            </a>
+          </div>
+        </div>
+        <div class="button3">
+          <div class="button-section">
+            <a href="../Frontend/light.html">
+              <button class="modal-button" id="light-button">Light</button>
+            </a>
+          </div>
+        </div>
+        <div class="button4">
+          <div class="button-section">
+            <a href="../Frontend/temperature.html">
+              <button class="modal-button" id="temperature-button">Temperature</button>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
 
+  <!-- <br>
     <br>
     <br>
     <br>
     <br>
     <br>
-    <br>
-    <br>
+    <br> -->
 
-    <footer>
-      <img src="../Images/Facebook-logo.png" alt="Twitter-logo" width="110px" height="70px">
-      <p>&copy; 2023 My Website. All rights reserved.</p>
-    </footer>
+  <footer>
+    <img src="../Images/Facebook-logo.png" alt="Twitter-logo" width="110px" height="70px">
+    <p>&copy; 2023 My Website. All rights reserved.</p>
+  </footer>
 
-    <script src="W1_script.js"></script>
-  </body>
+  <script src="W1_script.js"></script>
+  <script src="../Measurements/shareKnowledgePopUp.js"></script>
+</body>
+
 </html>
