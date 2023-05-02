@@ -15,6 +15,11 @@ if (!$conn) {
 $location = $_POST['location'];
 $humidity_level = $_POST['humidity'];
 
+if ($humidity_level < 0) {
+    echo "Error: Humidity value cannot be negative!";
+    exit();
+}
+
 // Prepare and bind the SQL statement
 $stmt = $conn->prepare("INSERT INTO humidity (humidity_level, location) VALUES (?, ?)");
 $stmt->bind_param("ds", $humidity_level, $location);

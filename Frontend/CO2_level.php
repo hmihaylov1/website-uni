@@ -15,6 +15,11 @@ if (!$conn) {
 $location = $_POST['location'];
 $co2_level = $_POST['co2_level'];
 
+if ($co2_level < 0) {
+    echo "Error: CO2 level value cannot be negative!";
+    exit();
+}
+
 // Prepare and bind the SQL statement
 $stmt = $conn->prepare("INSERT INTO co2_level (co2_level, location) VALUES (?, ?)");
 $stmt->bind_param("ds", $co2_level, $location);
