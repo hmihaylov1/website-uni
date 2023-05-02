@@ -1,11 +1,185 @@
-body {
-  background-color: #fff;
-  font-family: Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#myChart {
+body,
+html {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #FFFFFF, #BBF0F8);
+  font-family: 'Fredoka One', sans-serif;
+  color: #4d4d4d;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-areas: "header" "main" "footer";
+}
+
+/* <---------------------- NAVBAR CONTENT BEGINING ---------------------------------------------> */
+
+/* Header styles */
+header {
+  grid-area: header;
+  background-color: #30A1F4;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.my-website-heading {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.head-button {
+  border-radius: 40px;
+  padding: 10px 20px;
+  background-color: #FADE4D;
+  color: #434D66;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Fredoka One', sans-serif;
+  border: none;
+}
+
+.head-button-diff {
+  border-radius: 40px;
+  padding: 10px 20px;
+  background-color: #FA5959;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+/* Search Bar Styles */
+.search-container {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+.search-container form {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  padding: 8px;
+  border: none;
+  font-size: 20px;
+  background: #6CBAF2;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem 1.9rem;
+  font-size: 16px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the dropdown content when the dropdown button is hovered over */
+.dropdown:hover .dropdown-content {
   display: block;
-  margin: auto;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* <---------------------- NAVBAR CONTENT END ---------------------------------------------> */
+
+/* <---------------------- MAIN CONTENT BEGINING ---------------------------------------------> */
+
+main {
+  background: linear-gradient(to bottom right, #FFFFFF, #BBF0F8);
+  grid-area: main;
+  width: 100%;
+  height: 100%;
+}
+
+.back-arrow-container {
+  padding: 1rem;
+}
+
+.chart-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "chart-btn-container chart";
+  padding: 1rem;
+}
+
+.chart-btn-container {
+  grid-area: chart-btn-container;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart {
+  grid-area: chart;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
@@ -26,34 +200,89 @@ body {
   transform: scale(1.1);
 }
 
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
 
-.button {
-  display: block;
+.results-button {
   background-color: #6bb5ff;
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
   padding: 20px 30px;
   margin: 10px 0;
   border: none;
   border-radius: 10px;
+  text-decoration: none;
   cursor: pointer;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
 }
 
 
-.button:hover {
+.results-button:hover {
   background-color: #4d8fe7;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
 }
 
-.button {
-  text-decoration: none;
+
+/* <---------------------- MAIN CONTENT END ---------------------------------------------> */
+
+/* <---------------------- FOOTER CONTENT BEGINNING ---------------------------------------------> */
+
+footer {
+  grid-area: footer;
+  background-color: #A6D9F5;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
 }
+
+footer img {
+  margin-top: 1rem;
+}
+
+/* <---------------------- FOOTER CONTENT END ---------------------------------------------> */
+
+/* <---------------------- RESPONSIVE QUERIES BEGINNING ---------------------------------------------> */
+
+@media (min-width: 1073px) {
+  .nav-1 {
+      display: none;
+  }
+}
+
+@media (max-width: 1072px) {
+  .nav-2 {
+      display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .search-container form {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  .chart-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 0;
+  }
+
+  .chart-btn-container {
+      margin-bottom: 1rem;
+      flex-direction: row;
+      gap: 1rem;
+      flex-wrap: wrap;
+  }    
+}
+
+@media screen and (max-width: 768px) {
+  #myChart {
+      width: 100%;
+  }
+}
+
+/* <---------------------- RESPONSIVE QUERIES END ---------------------------------------------> */
   
