@@ -168,17 +168,18 @@ button {
 
 .watch-inner-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1.2rem;
   width: 70%;
   height: 90%;
-  background-color: white;
+  background-color: none;
 }
 
 .snimchica {
-  width: 397px;
-  height: 201px;
+  width: 65%;
+  height: auto;
 }
 
 .snimchica_about {
@@ -198,6 +199,7 @@ button {
 }
 
 .audio {
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
