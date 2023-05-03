@@ -20,8 +20,11 @@ $CO2_levels = $_POST['co2_level'];
 $stmt = mysqli_prepare($conn, "INSERT INTO co2_level (location, co2_level) VALUES (?, ?)");
 
 for ($i = 0; $i < count($locations); $i++) {
-  mysqli_stmt_bind_param($stmt, "ss", $locations[$i], $CO2_levels[$i]);
-  mysqli_stmt_execute($stmt);
+  // check if CO2_levels value is non-negative
+  if ($CO2_levels[$i] >= 0) {
+    mysqli_stmt_bind_param($stmt, "ss", $locations[$i], $CO2_levels[$i]);
+    mysqli_stmt_execute($stmt);
+  }
 }
 
 mysqli_stmt_close($stmt);
