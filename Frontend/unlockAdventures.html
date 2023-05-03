@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Example PDF Download Page</title>
-  </head>
-  <body>
-    <h1>Example PDF Download Page</h1>
-    <p>Click the button below to download our example PDF file:</p>
-    <a href="https://drive.google.com/file/d/1A-j-4C3i9LVxxnc0ERIPaF2JgfTpCpO_/view?usp=sharing" download>
-      <button>Download PDF</button>
-    </a>
-  </body>
+	<head>
+
+		<title>My Website</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="../Measurements/shareKnowledgePopUp.css">
+		<link rel="stylesheet" href="../DidYouKnow/didyouknow.css">
+		<link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+	</head>
+	  
+	<body>
+		<div class="header-section">
+		  <p>Encouraging you to discover your inner scientist every single day!</p>
+		</div>
+	  
+		<header>
+		  <a href="#" class="my-website-heading"><img src="../Images/pak.png" width="150px" height="75px"></a>
+		  	<div class="search-container">
+				<form action="/action_page.php">
+				  <input type="text" placeholder="Search...">
+				</form>
+			
+				<nav class="nav-1">
+				  <div class="dropdown">
+					<button class="dropbtn">Menu</button>
+					<div class="dropdown-content">
+					  <a href="#" id="share-knowledge1" class="head-button share-knowledge-btns">Share Knowledge</a>
+					  <a href="discoverResults.html" class="head-button">Discover Results</a>
+					  <a href="../ExploreMaterials/ExploreMaterials.html" class="head-button">Explore Materials</a>
+					  <a href="unlockAdventures.html" class="head-button">Unlock Adventures</a>
+					  <a href="#" class="head-button-diff">My World</a>
+					</div>
+				  </div>
+				</nav>
+		    </div>
+	  
+		  	<nav class="nav-2">
+				<ul>
+				  <li><button class="head-button share-knowledge-btns" id="share-knowledge2">Share Knowledge</button></li>
+				  <li><a href="discoverResults.html" class="head-button">Discover Results</a></li>
+				  <li><a href="../ExploreMaterials/ExploreMaterials.html" class="head-button">Explore Materials</a></li>
+				  <li><a href="unlockAdventures.html" class="head-button">Unlock Adventures</a></li>
+				  <li><a href="#" class="head-button-diff">My World</a></li>
+				</ul>
+		  	</nav>
+		</header>
+
+    	<h1>Example PDF Download Page</h1>
+    	<p>Click the button below to download our example PDF file:</p>
+    	<a href="https://drive.google.com/file/d/1A-j-4C3i9LVxxnc0ERIPaF2JgfTpCpO_/view?usp=sharing" download>
+    	  <button>Download PDF</button>
+    	</a>
+    	<footer>
+    		<img src="../Images/Facebook-logo.png" alt="Twitter-logo" width="110px" height="70px">
+    		<p>&copy; 2023 My Website. All rights reserved.</p>
+  		</footer>
+
+  		<script src="../Measurements/shareKnowledgePopUp.js"></script>
+  		<script src="website.js"></script>
+  		<script src="navbar-dropdown.js"></script>
+  		<script src="../DidYouKnow/didyouknow.js"></script>
+	</body>
 </html>

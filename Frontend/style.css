@@ -177,8 +177,8 @@ button {
 }
 
 .snimchica {
-  width: 15rem;
-  height: 15rem;
+  width: 397px;
+  height: 201px;
 }
 
 .snimchica_about {
@@ -195,6 +195,12 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   font-family: 'Fredoka One', sans-serif;
+}
+
+.audio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* Search Bar Styles */
 .search-container {
