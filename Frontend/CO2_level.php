@@ -16,7 +16,10 @@ $location = $_POST['location'];
 $co2_level = $_POST['co2_level'];
 
 if ($co2_level < 0) {
-    echo "Error: CO2 level value cannot be negative!";
+    echo "<script>
+            alert('Error: CO2 level value cannot be negative!');
+            window.location.href='CO2_level.html';
+          </script>";
     exit();
 }
 

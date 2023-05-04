@@ -16,7 +16,10 @@ $location = $_POST['location'];
 $light_level = $_POST['light_level'];
 
 if ($light_level < 0) {
-    echo "Error: Light level value cannot be negative!";
+    echo "<script>
+            alert('Error: Light value cannot be negative!');
+            window.location.href='light.html';
+          </script>";
     exit();
 }
 

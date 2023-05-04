@@ -16,7 +16,10 @@ $location = $_POST['location'];
 $humidity_level = $_POST['humidity'];
 
 if ($humidity_level < 0) {
-    echo "Error: Humidity value cannot be negative!";
+    echo "<script>
+            alert('Error: Humidity value cannot be negative!');
+            window.location.href='humidity.html';
+          </script>";
     exit();
 }
 
