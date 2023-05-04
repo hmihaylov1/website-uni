@@ -1,0 +1,38 @@
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.header-section{
+    text-align: left;
+}
+  
