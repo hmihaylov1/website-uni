@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../Measurements/shareKnowledgePopUp.css">
+  <link rel="stylesheet" href="../DidYouKnow/didyouknow.css">
+  <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="header-section">
+    <p>Encouraging you to discover your inner scientist every single day!</p>
+  </div>
+
+  <header>
+    <a href="#" class="my-website-heading"><img src="../Images/pak.png" width="150px" height="75px"></a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search...">
+      </form>
+
+      <nav class="nav-1">
+        <div class="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+            <a href="#" id="share-knowledge1" class="head-button share-knowledge-btns">Share Knowledge</a>
+            <a href="discoverResults.html" class="head-button">Discover Results</a>
+            <a href="../ExploreMaterials/ExploreMaterials.html" class="head-button">Explore Materials</a>
+            <!-- <a href="unlockAdventures.html" class="head-button">Unlock Adventures</a> -->
+            <a href="../registerSystem/login.html" class="head-button-diff">Logout</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <nav class="nav-2">
+      <ul>
+        <li><button class="head-button share-knowledge-btns" id="share-knowledge2">Share Knowledge</button></li>
+        <li><a href="discoverResults.html" class="head-button">Discover Results</a></li>
+        <li><a href="../ExploreMaterials/ExploreMaterials.html" class="head-button">Explore Materials</a></li>
+        <!-- <li><a href="unlockAdventures.html" class="head-button">Unlock Adventures</a></li> -->
+        <li><a href="../registerSystem/login.html" class="head-button-diff">Logout</a></li>
+      </ul>
+    </nav>
+
+
+
+  </header>
+  <main>
+    <section class="section1">
+      <div class="welcome">
+        <h2>Making Data Accessible and Fun</h2>
+      </div>
+      <div class="watch-vid-btn">
+        <a class="watch-video">Voice Recording</a>
+      </div>
+      <div class="welcome-p">
+        <p>Welcome! This website will help you learn how to use energy more
+          sustainably in your school buildings and classrooms. Watch the video
+          to find out how you can help make recordings around your school and
+          learn to be more sustainable. </p>
+      </div>
+      <div class="watch-vid-container">
+        <div class="watch-inner-container">
+          <img
+            src="../Images/website-front-page.png"
+            alt="kartinka" class="snimchica">
+            <div class="audio">
+              <audio controls>
+                <source src="../Images/20230320_122242-proejct-welcome-online.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <h2 class="section2-heading">Discover the Secrets of Our Buttons</h2>
+
+    <section class="section2">
+
+      <div class="share-knowledge-p">
+        <p class="text-1" align="justify">You can record how the environment is
+          around your school to help us save energy.  Click 'Share Knowledge' to
+          begin making recordings of temperature, Carbon Dioxide (CO2), light,
+          and humidity in different places around your classroom and school.</p>
+      </div>
+      <div class="share-knowledge-btn">
+        <button class="head-button share-knowledge-btns" id="share-knowledge3">Share Knowledge</button>
+      </div>
+      <div class="discover-results-btn">
+        <a href="discoverResults.html" class="head-button">Discover Results</a>
+      </div>
+      <div class="discover-results-p">
+        <p class="text-2" align="justify">Hey there! The data you collect is important
+          because it tells us about the world around us. Once you have made some recordings,
+          click 'Discover Results' to see what you have recorded in tables and charts.</p>
+      </div>
+      <div class="explore-materials-p">
+        <p>All of our activities can be done on downloadable worksheets.
+          Teachers and learners can click 'Explore Materials' to see our
+          worksheets, lesson plans and teacher guides for recording the school
+          environment, and different activities about buildings, energy and sustainability.</p>
+
+      </div>
+      <div class="explore-materials-btn">
+        <a href="../ExploreMaterials/ExploreMaterials.html" class="head-button">Explore Materials</a>
+      </div>
+      <div class="unlock-adventures-btn">
+        <a href="unlockAdventures.html" class="head-button">Unlock Adventures</a>
+      </div>
+      <div class="unlock-adventures-p">
+        <p class="text-3" align="justify">Want to know more? Click 'Unlock Adventures' to
+          find links to other websites and resources that can help you learn about buildings,
+          energy use, and sustainability. </p>
+      </div>
+
+    </section>
+
+
+    <hr>
+    <section class="section3">
+      <h4>Did You Know?</h4>
+      <div id="fun-fact-section"></div>
+      <div class="did-you-know-refresh-container">
+        <button id="refresh-button">Refresh</button>
+      </div>
+    </section>
+    <hr>
+
+    <section class="section4">
+      <h4>About Us</h4>
+      <p class="p-tag-centered">We are a team of researchers from Cardiff University: Gabriela Zapata-Lancaster, Tom Smith, and Nervo Verdezoto Dias.</p> 
+      <p class="p-tag-centered">We have been working together with Schools, children and teachers in Wales to better understand how we can make school buildings more energy efficient and sustainable.</p>
+      <p class="p-tag-centered">We want children to help us collect data, and learn themselves about being more sustainable and making indoor environments (like your classroom) as good as they can be.</p>
+    </section>
+    
+    <div id="modal-dialog" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="button-container">
+          <div class="button1">
+            <div class="button-section">
+              <a href="../Frontend/humidity.html">
+                <button class="modal-button" id="humidity-button">Humidity</button>
+            </div>
+          </div>
+          <div class="button2">
+            <div class="button-section">
+              <a href="../Frontend/CO2_level.html">
+                <button class="modal-button" id="co2-button">CO2</button>
+              </a>
+            </div>
+          </div>
+          <div class="button3">
+            <div class="button-section">
+              <a href="../Frontend/light.html">
+                <button class="modal-button" id="light-button">Light</button>
+              </a>
+            </div>
+          </div>
+          <div class="button4">
+            <div class="button-section">
+              <a href="../Frontend/temperature.html">
+                <button class="modal-button" id="temperature-button">Temperature</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <img src="../Images/Facebook-logo.png" alt="Twitter-logo" width="110px" height="70px">
+    <p>&copy; 2023 My Website. All rights reserved.</p>
+  </footer>
+
+  <script src="../Measurements/shareKnowledgePopUp.js"></script>
+  <script src="website.js"></script>
+  <script src="navbar-dropdown.js"></script>
+  <script src="../DidYouKnow/didyouknow.js"></script>
+</body>
+
+</html>
